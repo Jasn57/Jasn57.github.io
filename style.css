@@ -4,7 +4,7 @@ body, h1, input {
 }
 
 
-body {
+.body {
   font: 'Times New Roman'
   background-color: #000000;
   color: #960000; 
