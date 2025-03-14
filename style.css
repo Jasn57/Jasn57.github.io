@@ -1,6 +1,6 @@
 body, h1, input {
-  margin: 56px;
-  padding: 56px;
+  margin: 100px;
+  padding: 100px;
 }
 
 
@@ -30,7 +30,7 @@ body {
 
 .textbox {
   width: 100%; 
-  padding: 56px; 
+  padding: 70px; 
   font-size: 1em; 
   border: 1px solid #2c2c2c; 
   border-radius: 4px; 
