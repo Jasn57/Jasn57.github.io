@@ -14,7 +14,7 @@ body {
 
 .title {
   color: rgb(189, 0, 0); 
-  font-size: 2rem;
+  font-size: 3rem;
   margin-bottom: 20px;
 }
 
@@ -26,6 +26,6 @@ body {
   width: 100%;
   box-sizing: border-box; 
   border-radius: 5px;
-  font-size: 1rem;
+  font-size: 2rem;
   margin-top: 20px;
 }
