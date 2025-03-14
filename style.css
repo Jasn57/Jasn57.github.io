@@ -1,7 +1,7 @@
 body {
-  background-color: #121212; 
+  background-color: #333333; 
   color: #e0e0e0; 
-  font-family: Arial, sans-serif; 
+  font-family: 'Times New Roman', Times
   margin: 0;
   padding: 0;
 }
@@ -21,7 +21,7 @@ body {
 .textbox {
   background-color: #333333; 
   color: #e0e0e0; 
-  border: 1px solid #444444; 
+  border: 1px solid #000000; 
   padding: 10px;
   width: 100%;
   box-sizing: border-box; 
