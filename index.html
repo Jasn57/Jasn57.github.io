@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jasn's Webpage</title>
   <style>
-   
+
     body {
-      background-color: #181818;
+      background-color: #121212;
       color: #ffffff;
       font-family: Arial, sans-serif;
       margin: 0;
@@ -20,6 +20,7 @@
       font-size: 2rem;
     }
 
+    /* Navbar Styles */
     nav {
       background-color: #333333;
       padding: 10px 0;
@@ -37,6 +38,40 @@
       text-decoration: underline;
     }
 
+    .image-container {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    }
+
+    .textbox-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .textbox {
+      padding: 10px;
+      font-size: 1rem;
+      width: 80%;
+      max-width: 600px;
+      background-color: #333333;
+      color: #ffffff;
+      border: 1px solid #555555;
+      border-radius: 5px;
+    }
+
+    .textbox:focus {
+      outline: none;
+      border-color: #da0000;
+    }
+
   </style>
 </head>
 <body>
@@ -49,6 +84,14 @@
   </nav>
 
   <h1>Jasn's Webpage</h1>
+
+  <div class="image-container">
+    <img src="https://www.pinterest.com/pin/5770305767190084/"
+  </div>
+
+  <div class="textbox-container">
+    <input type="text" class="textbox" placeholder="Hello my name is Jasn, I am a video editor and I am learning how to code.">
+  </div>
 
 </body>
 </html>
