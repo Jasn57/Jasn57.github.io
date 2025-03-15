@@ -1,33 +1,32 @@
 body {
-  background-color: #000000; 
-  color: #e0e0e0; 
-  font-family: 'Times New Roman', Times
+  background-color: #121212; 
+  color: #ffffff; 
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
-.container {
-  padding: 20px;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.title {
-  text-allign: center;
-  color: rgb(189, 0, 0); 
-  font-size: 5rem;
-  margin-bottom: 20px;
+header h1 {
+  text-align: center;
+  color: #b40000;
+  font-size: 3rem;
+  margin-bottom: 30px; 
 }
 
 .textbox {
-  text-allign: center;
-  background-color: #333333; 
-  color: #e0e0e0; 
-  border: 1px solid #000000; 
-  padding: 10px;
-  width: 100%;
-  box-sizing: border-box; 
+  text-align: center;
+  background-color: #2e2e2e;
+  color: #ffffff;
+  border: 1px solid #000000;
+  padding: 20px;
+  width: 60%;
+  box-sizing: border-box;
   border-radius: 5px;
-  font-size: 4rem;
+  font-size: 1.5rem;
   margin-top: 20px;
 }
