@@ -1,7 +1,7 @@
 body {
-  background-color: #121212;
-  color: white; 
-  font-family: Arial, sans-serif;
+  background-color: #121212; 
+  color: white;  
+  font-family: Arial, sans-serif;  
   margin: 0;
   padding: 0;
   display: flex;
@@ -14,7 +14,7 @@ body {
 
 nav {
   width: 100%;
-  background-color: #333;
+  background-color: #333; 
   padding: 10px 0;
   text-align: center;
 }
@@ -27,7 +27,7 @@ nav a {
 }
 
 nav a:hover {
-  text-decoration: underline;
+  text-decoration: underline; 
 }
 
 h1 {
@@ -35,10 +35,20 @@ h1 {
   font-size: 36px;
 }
 
-img {
+.image-container {
   max-width: 80%;
   height: auto;
   margin: 20px 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;  
+}
+
+.text-box {
+  margin-top: 20px;
 }
 
 input[type="text"] {
@@ -47,11 +57,10 @@ input[type="text"] {
   border: 1px solid #444;
   padding: 10px;
   width: 80%;
-  margin-top: 20px;
   font-size: 16px;
 }
 
 input[type="text"]:focus {
   outline: none;
-  border-color: #555;
+  border-color: #555;  
 }
