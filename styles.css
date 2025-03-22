@@ -56,9 +56,5 @@ nav a:hover {
   color: #ffffff;
   border: 1px solid #555555;
   border-radius: 5px;
-}
-
-.textbox:focus {
-  outline: none;
-  border-color: #da0000;
+  white-space: pre-wrap;
 }
