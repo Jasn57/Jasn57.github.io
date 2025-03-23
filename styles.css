@@ -6,7 +6,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #121212;
+  background-color: #121212; 
   color: #e0e0e0;
   padding: 20px;
 }
@@ -14,7 +14,7 @@ body {
 header {
   text-align: center;
   padding: 20px;
-  background: #333; 
+  background: #333;
   color: white;
 }
 
@@ -29,7 +29,8 @@ header h1 {
 
 .image-section img {
   width: 100%;
-  max-width: 600px;
+  max-width: 800px; 
+  height: auto;  
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
 }
@@ -68,7 +69,7 @@ header h1 {
 }
 
 .card a:hover {
-  color: #002e74; 
+  color: #002e74;
 }
 
 .divider {
@@ -78,6 +79,7 @@ header h1 {
 
 .additional-cards {
   display: flex;
+  flex-wrap: wrap; 
   justify-content: space-between;
   gap: 20px;
   padding: 20px 0;
@@ -85,4 +87,42 @@ header h1 {
 
 .additional-cards .card {
   width: 30%;  
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 1.5rem; 
+  }
+
+  .image-section img {
+    max-width: 100%; 
+  }
+
+  .card {
+    width: 100%;  
+    margin: 10px 0; 
+  }
+
+  .additional-cards .card {
+    width: 100%; 
+  }
+
+  .additional-cards {
+    justify-content: center; 
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header h1 {
+    font-size: 1.2rem; 
+  }
+
+  .card {
+    width: 100%;  
+  }
+
+  .additional-cards .card {
+    width: 100%; 
+  }
 }
