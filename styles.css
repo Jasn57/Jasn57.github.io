@@ -7,27 +7,6 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
-.navbar {
-  display: flex;
-  justify-content: center; 
-  align-items: center;
-  padding: 10px 20px;
-  background-color: #333;
-  color: white;
-}
-
-.navbar a {
-  text-decoration: none;
-  color: inherit;
-  font-size: 18px;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-.navbar a:hover {
-  text-decoration: underline;
-}
-
 .main-content {
   text-align: center;
   padding: 20px;
