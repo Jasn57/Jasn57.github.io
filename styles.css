@@ -64,12 +64,12 @@ header h1 {
 
 .card a {
   text-decoration: none;
-  color: #002649;
+  color: #0059ac;
   font-weight: bold;
 }
 
 .card a:hover {
-  color: #002e74;
+  color: #0055d4;
 }
 
 .divider {
