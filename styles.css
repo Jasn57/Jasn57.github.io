@@ -71,3 +71,39 @@ header h1 {
   border: 1px solid #444;
   margin: 40px 0;
 }
+
+.navbar {
+  background-color: #333;
+  padding: 10px 20px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  color: #0059ac;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+  background-color: #0055d4;
+  border-radius: 5px;
+}
+
+  .navbar li {
+      margin: 10px 0;
+  }
+}
