@@ -1,87 +1,89 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #121212; 
-  color: #f5f5f5;
   margin: 0;
   padding: 0;
-}
-
-.navbar {
-  background-color: #333; 
-  padding: 10px;
+  background-color: #121212;
+  color: #e0e0e0;
   text-align: center;
 }
 
+.navbar {
+  background-color: #1e1e1e;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
 .navbar ul {
-  list-style-type: none;
+  list-style: none;
   padding: 0;
-  margin: 0;
 }
 
 .navbar ul li {
   display: inline;
-  margin-right: 15px;
+  margin: 0 15px;
 }
 
 .navbar ul li a {
-  color: #0c5db2; 
+  color: #3a8fd8;
   text-decoration: none;
   font-size: 18px;
 }
 
-.navbar ul li a:hover {
-  text-decoration: underline;
-}
-
 header {
-  text-align: center;
-  margin: 20px 0;
+  color: #3a8fd8;
+  font-size: 24px;
+  margin: 0;
+  padding-bottom: 10px;
 }
 
 header h1 {
-  font-size: 2.5em;
-  font-weight: bold;
-  color: #0c5db2; 
+  font-size: 2.5rem;
 }
 
-.cards-section {
-  display: block; 
-  margin-top: 40px;
-}
-
-.card {
-  width: 90%; 
-  margin: 20px auto;
-  padding: 20px;
-  border: 1px solid #444; 
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); 
-  background-color: #222; 
-}
-
-.card h3 {
-  font-size: 1.5em;
-  color: #f5f5f5; 
-}
-
-.card p {
-  font-size: 1em;
-  color: #bbb; 
-}
-
-.card a {
-  text-decoration: none;
-  color: #0c5db2; 
-  font-weight: bold;
-}
-
-.card a:hover {
-  text-decoration: underline;
+.textbox {
+  margin: 0 auto;
+  padding: 10px 0;
+  max-width: 600px;
 }
 
 .divider {
-  width: 100%;
+  width: 80%;
   height: 2px;
-  background-color: #444; 
-  margin: 20px 0;
+  background-color: #333;
+  margin: 20px auto;
+}
+
+.info-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.info-text {
+  flex: 1;
+  text-align: left;
+}
+
+.info-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+  .info-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .info-image img {
+    max-width: 300px;
+  }
 }
