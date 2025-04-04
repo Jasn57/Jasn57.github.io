@@ -9,24 +9,87 @@ body {
 
 .navbar {
   background-color: #1e1e1e;
-  padding: 10px 0;
-  margin-bottom: 20px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap; 
 }
 
 .navbar ul {
   list-style: none;
   padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  flex-wrap: nowrap; 
 }
 
 .navbar ul li {
   display: inline;
-  margin: 0 15px;
 }
 
 .navbar ul li a {
   color: #3a8fd8;
   text-decoration: none;
   font-size: 18px;
+  padding: 8px 12px;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: #6cb5ff;
+}
+
+#theme-toggle {
+  background-color: #3a8fd8;
+  color: #121212;
+  border: none;
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+#theme-toggle:hover {
+  background-color: #6cb5ff;
+  transform: scale(1.05);
+  box-shadow: 0px 4px 10px rgba(58, 143, 216, 0.3);
+}
+
+#theme-toggle:active {
+  transform: scale(0.95);
+}
+
+/* Light Mode */
+.light-mode {
+  background-color: #ffffff;
+  color: #121212;
+}
+
+.light-mode .navbar {
+  background-color: #f0f0f0;
+}
+
+.light-mode .navbar ul li a {
+  color: #007bff;
+}
+
+.light-mode .navbar ul li a:hover {
+  color: #3399ff;
+}
+
+.light-mode #theme-toggle {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.light-mode #theme-toggle:hover {
+  background-color: #3399ff;
+  box-shadow: 0px 4px 10px rgba(0, 123, 255, 0.3);
 }
 
 header {
@@ -49,7 +112,7 @@ header h1 {
 .divider {
   width: 80%;
   height: 2px;
-  background-color: #333;
+  background: linear-gradient(to right, transparent, #3a8fd8, transparent);
   margin: 20px auto;
 }
 
@@ -78,11 +141,20 @@ header h1 {
 }
 
 @media (max-width: 600px) {
+  .navbar {
+    flex-wrap: nowrap; 
+    overflow-x: auto; 
+  }
+
+  .navbar ul {
+    flex-wrap: nowrap; 
+  }
+
   .info-section {
     flex-direction: column;
     text-align: center;
   }
-  
+
   .info-image img {
     max-width: 300px;
   }
