@@ -163,7 +163,7 @@ header h1 {
   background-color: #003066;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .project-grid {
     grid-template-columns: 1fr;
   }
