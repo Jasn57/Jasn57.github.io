@@ -34,7 +34,7 @@ body {
 }
 
 .about-me {
-  background: #f0f1f5; 
+  background: #ebecf0;
   max-width: 700px;
   margin: 2.5rem auto;
   padding: 2.5rem 2rem 2rem 2rem;
@@ -75,9 +75,9 @@ background: #5A65A8;
 
 .about-me img {
   display: block;
-  margin: 2.5rem auto 0 auto;
+  margin: 2rem auto 0 auto;
   width: 180px; 
-  height: 180px;
+  height: 180 px;
   border-radius: 50%;
 
   object-fit: cover;
@@ -94,7 +94,7 @@ background: #5A65A8;
 }
 
 .project {
-  background: #f0f1f5; 
+  background: #ebecf0;
   border-radius: 16px;
   box-shadow: 0 4px 24px rgba(90,101,168,0.12);
   padding: 2rem 1.2rem 1.5rem 1.2rem;
@@ -136,7 +136,7 @@ background: #5A65A8;
 .organizations {
   max-width: 700px;
   margin: 2.5rem auto;
-  background: #f0f1f5;
+  background: #ebecf0;
   border-radius: 18px;
   box-shadow: 0 4px 24px rgba(90,101,168,0.10);
   padding: 2.5rem 2rem 2rem 2rem;
@@ -168,7 +168,7 @@ background: #5A65A8;
 }
 
 .organization a {
-  color: #fff;
+  color: #ffffff;
   background: #5A65A8; 
   padding: 0.4rem 1.1rem;
   border-radius: 6px;
