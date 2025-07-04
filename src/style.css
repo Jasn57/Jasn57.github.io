@@ -5,187 +5,78 @@
 }
 
 body {
-  font-family: 'Segoe UI', Arial, sans-serif;
-  background: #121212;
-  color: #e0e0e0;
-  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f3ee;
+  color: #2f3e2e;
   line-height: 1.6;
+  min-height: 100vh;
 }
 
 .header {
-  background: linear-gradient(#7F00A9, #320043);
+  background: linear-gradient(135deg, #4a7c59, #2f3e2e);
   color: #ffffff;
   text-align: center;
-  padding: 7rem 1rem 5rem 1rem;
-  font-size: 2.8rem;
-  font-weight: 900;
-  letter-spacing: 2px;
-  margin-bottom: 2.5rem;
-  box-shadow: 0 6px 32px rgba(0, 0, 0, 0.5);
-  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+  padding: 6rem 1rem 4rem;
+  box-shadow: 0 6px 24px rgba(74, 124, 89, 0.2);
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 .header h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 900;
-  letter-spacing: 4px;
+  letter-spacing: 3px;
 }
 
-/* About Me */
 .about-me {
-  background: #1e1e1e;
-  max-width: 700px;
-  margin: 2.5rem auto;
-  padding: 2.5rem 2rem 2rem 2rem;
+  background: #f1efe2;
+  max-width: 720px;
+  margin: 3rem auto;
+  padding: 2.5rem;
   border-radius: 18px;
-  box-shadow: 0 4px 24px rgba(127, 0, 169, 0.2);
+  box-shadow: 0 4px 24px rgba(74, 124, 89, 0.15);
   text-align: center;
 }
 
 .about-me h2 {
-  color: #C000FF;
-  margin-bottom: 1rem;
   font-size: 2.2rem;
-  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #4a7c59;
 }
 
 .about-me p {
-  margin-bottom: 1.2rem;
   font-size: 1.15rem;
-  color: #ccc;
-}
-
-.projects-grid {
-  max-width: 900px;
-  margin: 2.5rem auto;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
-  padding: 0 1rem;
-}
-
-.project {
-  background: #1f1f1f;
-  border-radius: 16px;
-  box-shadow: 0 4px 24px rgba(127, 0, 169, 0.15);
-  padding: 2rem 1.2rem 1.5rem 1.2rem;
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  transition: transform 0.2s, box-shadow 0.2s;
-  text-align: left;
-}
-
-.project img {
-  width: 300px;
-  height: 260px;
-  border-radius: 16px;
-  object-fit: cover;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  flex-shrink: 0;
-  margin: 0;
-}
-
-@media (max-width: 900px) {
-  .project img {
-    width: 180px;
-    height: 180px;
-  }
-}
-
-@media (max-width: 700px) {
-  .project img {
-    width: 120px;
-    height: 120px;
-    margin-bottom: 1rem;
-  }
-}
-
-.project-content {
-  flex: 1;
-}
-
-.project h3 {
-  color: #C000FF;
-  margin-bottom: 0.7rem;
-  font-size: 1.7rem;
-  font-weight: 700;
-}
-
-.project p {
-  color: #d0d0d0;
-  margin-bottom: 1.2rem;
-  font-size: 1.15rem;
-}
-
-.project a {
-  color: #fff;
-  background: #7F00A9;
-  padding: 0.6rem 1.4rem;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background 0.2s, box-shadow 0.2s;
-  display: inline-block;
-  box-shadow: 0 2px 8px rgba(127, 0, 169, 0.2);
-}
-
-.project a:hover {
-  background: #a833d3;
-  box-shadow: 0 4px 16px rgba(127, 0, 169, 0.3);
+  margin-bottom: 1rem;
+  color: #3d4a3d;
 }
 
 footer {
-  background: #1a1a1a;
-  color: #cfa7e6;
+  background: #e9e6db;
+  color: #4a7c59;
   text-align: center;
-  padding: 1.5rem 0 1.2rem 0;
-  font-size: 1.1rem;
+  padding: 1.2rem 0;
+  font-size: 1rem;
   border-top-left-radius: 18px;
   border-top-right-radius: 18px;
-  margin-top: 2.5rem;
-  box-shadow: 0 -2px 16px rgba(127, 0, 169, 0.1);
-  letter-spacing: 1px;
-}
-
-@media (max-width: 900px) {
-  .projects-grid {
-    grid-template-columns: 1fr;
-    gap: 1.2rem;
-    padding: 0 0.5rem;
-  }
-  .about-me {
-    padding: 1.2rem 0.5rem;
-    max-width: 98vw;
-  }
+  margin-top: 3rem;
+  box-shadow: 0 -2px 12px rgba(74, 124, 89, 0.1);
+  letter-spacing: 0.5px;
 }
 
 @media (max-width: 700px) {
-  .header {
-    font-size: 1.5rem;
-    padding: 3.5rem 0.5rem 2rem 0.5rem;
-  }
-
   .header h1 {
-    font-size: 2.7rem;
+    font-size: 2.5rem;
   }
 
   .about-me {
-    padding: 1rem 0.2rem;
-    border-radius: 10px;
+    padding: 1.5rem;
+    margin: 2rem 1rem;
   }
 
-  .project {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 1.2rem 0.5rem;
+  .about-me h2 {
+    font-size: 1.75rem;
   }
 
-  footer {
-    font-size: 0.95rem;
-    padding: 0.8rem 0;
-    border-radius: 0;
-    margin-top: 1rem;
+  .about-me p {
+    font-size: 1rem;
   }
 }
