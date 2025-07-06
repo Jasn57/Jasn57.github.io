@@ -4,79 +4,89 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f4f3ee;
-  color: #2f3e2e;
-  line-height: 1.6;
-  min-height: 100vh;
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: Georgia, serif;
+  background-color: #FFFDF5;
+  color: #222;
 }
 
 .header {
-  background: linear-gradient(135deg, #4a7c59, #2f3e2e);
-  color: #ffffff;
+  background: linear-gradient(to right, #3a7d4f, #68a672);
+  padding: 80px 20px 40px;
   text-align: center;
-  padding: 6rem 1rem 4rem;
-  box-shadow: 0 6px 24px rgba(74, 124, 89, 0.2);
-  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  transform: skewY(-2deg);
+  margin-bottom: 80px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 }
 
 .header h1 {
-  font-size: 4rem;
-  font-weight: 900;
-  letter-spacing: 3px;
+  font-size: 2.5rem;
+  transform: skewY(2deg);
 }
 
-.about-me {
-  background: #f1efe2;
-  max-width: 720px;
-  margin: 3rem auto;
-  padding: 2.5rem;
-  border-radius: 18px;
-  box-shadow: 0 4px 24px rgba(74, 124, 89, 0.15);
-  text-align: center;
+.about-card {
+  background: #FFFBE9;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto 60px;
+  padding: 25px;
+  max-width: 600px;
+  transform: rotate(-0.5deg);
 }
 
-.about-me h2 {
-  font-size: 2.2rem;
-  margin-bottom: 1rem;
-  color: #4a7c59;
+.about-card h2 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
 }
 
-.about-me p {
-  font-size: 1.15rem;
-  margin-bottom: 1rem;
-  color: #3d4a3d;
-}
-
-footer {
-  background: #e9e6db;
-  color: #4a7c59;
-  text-align: center;
-  padding: 1.2rem 0;
+.about-card p {
   font-size: 1rem;
-  border-top-left-radius: 18px;
-  border-top-right-radius: 18px;
-  margin-top: 3rem;
-  box-shadow: 0 -2px 12px rgba(74, 124, 89, 0.1);
-  letter-spacing: 0.5px;
+  line-height: 1.5;
 }
 
-@media (max-width: 700px) {
-  .header h1 {
-    font-size: 2.5rem;
-  }
+.projects {
+  text-align: center;
+  margin-bottom: 60px;
+}
 
-  .about-me {
-    padding: 1.5rem;
-    margin: 2rem 1rem;
-  }
+.projects h2 {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
 
-  .about-me h2 {
-    font-size: 1.75rem;
-  }
+.project-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
 
-  .about-me p {
-    font-size: 1rem;
-  }
+.polaroid {
+  width: 200px;
+  height: 240px;
+  background-color: #FFFBE9;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  transform: rotate(-1deg);
+}
+
+.polaroid:nth-child(2) {
+  transform: rotate(1deg);
+}
+
+.screenshot {
+  background-color: #000;
+  width: 100%;
+  height: 150px;
+}
+
+.footer {
+  background: linear-gradient(to right, #3a7d4f, #68a672);
+  padding: 15px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.15);
 }
