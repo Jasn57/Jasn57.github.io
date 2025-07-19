@@ -3,31 +3,51 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Jasn57.github.io</title>
+  <title>Jasn57 Portfolio</title>
   <link rel="stylesheet" href="src/style.css" />
 </head>
 <body>
-  <header class="header">
-    <h1><span>Jasn57</span>.github.io</h1>
+  <header>
+    <div class="nav-wrapper">
+      <nav>
+        <div class="logo">Jasn57.github.io</div>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+        </div>
+      </nav>
+    </div>
+    <div class="hero">
+      <h1>Jasn's Portfolio</h1>
+      <a href="#projects" class="btn">View Projects</a>
+    </div>
   </header>
 
-  <section class="about-card">
-    <h2>About Me</h2>
-    <p>
-      Hi, I’m Jasn — a UI/UX designer and frontend developer. This portfolio website was coded by me using HTML and CSS to showcase my design skills, especially those I’ve developed in Figma.
-      This webpage is under construction
-    </p>
-  </section>
+  <main>
+  <section class="about" id="about">
+  <p>
+    Hey, I’m Jasn — a UI/UX designer and frontend developer who enjoys building clean, easy-to-use interfaces. I designed this site in Figma and coded it myself with HTML and CSS.
+  </p>
+  <p>
+    This portfolio is here to show off my design style and projects. I'm focused on simple, clear layouts that just work.
+  </p>
+</section>>
 
-  <section class="projects">
-    <h2>Design Projects</h2>
-    <div class="project-gallery">
-      <div class="polaroid"><div class="screenshot"></div></div>
-      <div class="polaroid"><div class="screenshot"></div></div>
-    </div>
-  </section>
+    <section class="projects" id="projects">
+      <div class="project-card">
+        <h3>This Site!</h3>
+        <p>This project is this very site, my portfolio site. For this site I went with a modern and clean vibe. Dark mode with purple accent colors.</p>
+        <a href="#" class="btn">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Placeholder</h3>
+        <p>I am still working on portfolio worthy projects.</p>
+        <a href="#" class="btn">View Project</a>
+      </div>
+    </section>
+  </main>
 
-  <footer class="footer">
+  <footer>
     <p>© 2025 Jasn</p>
   </footer>
 </body>
