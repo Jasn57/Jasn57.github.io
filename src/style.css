@@ -1,7 +1,7 @@
 :root {
   --bg: #18181A;
   --text: #f5f5f5;
-  --accent: #A259FF;
+  --accent: #8C1D1D;
   --muted: #cfcfcf;
   --stroke: #3A3A3D;
 }
@@ -72,10 +72,11 @@ nav {
   transition: background 0.3s ease;
   display: inline-block;
   margin-top: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .btn:hover {
-  background-color: #8f57e6;
+  background-color: #7a1919;
 }
 
 main {
@@ -96,7 +97,7 @@ main {
 
 .about:hover {
   transform: translateY(-4px);
-  box-shadow: 0 6px 20px rgba(162, 89, 255, 0.2);
+  box-shadow: 0 6px 20px rgba(150, 31, 31, 0.2);
 }
 
 .projects {
@@ -120,8 +121,8 @@ main {
 }
 
 .project-card:hover {
-    transform: translateY(-4px);
-  box-shadow: 0 6px 20px rgba(162, 89, 255, 0.2);
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(150, 31, 31, 0.2);
 }
 
 footer {
