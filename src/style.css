@@ -61,6 +61,24 @@ nav {
 .hero h1 {
   font-size: 4rem;
   margin-bottom: 2rem;
+  animation: slideFadeIn 1s ease forwards;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.hero p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  animation: slideFadeIn 1.2s ease forwards;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+@keyframes slideFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .btn {
@@ -93,6 +111,7 @@ main {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
   transition: transform 0.3s, box-shadow 0.3s;
   font-size: 1.35rem;
+  /* Removed animation, opacity, and transform for fade-in */
 }
 
 .about:hover {
