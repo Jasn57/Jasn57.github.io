@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Fira Code', monospace;
+  background-color: #2e3245;
+  color: #ddd;
+  line-height: 1.6;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  background-color: #2e3245;
+}
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+.nav a:hover {
+  color: #FACC15;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 4rem 8%;
+}
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero h1 {
+  font-size: 3rem;
+  color: #FACC15;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+.hero h2 {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+}
+.hero img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.about {
+  background-color: #212431;
+  padding: 4rem 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.about h1 {
+  font-size: 2rem;
+  color: #FACC15;
+  margin-bottom: 1rem;
+}
+.about p {
+  max-width: 500px;
+  font-size: 1rem;
+}
+.tools {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  gap: 1rem;
+}
+.tools img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.projects {
+  padding: 4rem 8%;
+}
+.projects h1 {
+  font-size: 2rem;
+  color: #FACC15;
+  margin-bottom: 2rem;
+}
+.card {
+  background-color: #1e212d;
+  padding: 2rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.card h3 {
+  font-size: 1.5rem;
+}
+.card p {
+  font-size: 1rem;
+}
+.btn {
+  background: #FACC15;
+  color: #222;
+  padding: 0.8rem 1.5rem;
+  border-radius: 10px;
+  text-decoration: none;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+.btn:hover {
+  background: #FACC15;
+}
+
+.designs {
+  padding: 4rem 8%;
+}
+.designs img {
+  max-width: 300px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.footer {
+  background: #FACC15;
+  color: #222;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero img {
+    margin-top: 1rem;
+  }
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+  .projects .card {
+    flex-direction: column;
+    text-align: center;
+  }
+}
