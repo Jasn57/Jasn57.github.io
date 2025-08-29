@@ -11,6 +11,7 @@ body {
   line-height: 1.6;
 }
 
+/* ---------- NAV ---------- */
 .nav {
   display: flex;
   justify-content: center;
@@ -26,9 +27,11 @@ body {
   color: #fff;
   text-decoration: none;
   font-size: 1.1rem;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 .nav a:hover {
   color: #FACC15;
+  transform: scale(1.1);
 }
 
 .hero {
@@ -47,16 +50,23 @@ body {
   font-size: 3rem;
   color: #FACC15;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
 }
+
 .hero h2 {
   margin-top: 0.5rem;
   font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+.hero h2:hover {
+  color: #FACC15;
 }
 .hero img {
   width: 200px;
   height: 200px;
   border-radius: 50%;
   object-fit: cover;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .about {
@@ -72,11 +82,14 @@ body {
   font-size: 2rem;
   color: #FACC15;
   margin-bottom: 1rem;
+  transition: transform 0.3s ease;
 }
+
 .about p {
   max-width: 500px;
   font-size: 1rem;
 }
+
 .tools {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
@@ -86,6 +99,11 @@ body {
   width: 60px;
   height: 60px;
   object-fit: contain;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+.tools img:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(0px 0px 8px #fff2f2);
 }
 
 .projects {
@@ -95,7 +113,9 @@ body {
   font-size: 2rem;
   color: #FACC15;
   margin-bottom: 2rem;
+  transition: transform 0.3s ease;
 }
+
 .card {
   background-color: #1e212d;
   padding: 2rem;
@@ -105,13 +125,27 @@ body {
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.6);
 }
 .card h3 {
   font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+.card h3:hover {
+  color: #FACC15;
 }
 .card p {
   font-size: 1rem;
+  transition: color 0.3s ease;
 }
+.card p:hover {
+  color: #eee;
+}
+
 .btn {
   background: #FACC15;
   color: #222;
@@ -119,20 +153,35 @@ body {
   border-radius: 10px;
   text-decoration: none;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .btn:hover {
-  background: #FACC15;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.6);
 }
 
 .designs {
   padding: 4rem 8%;
 }
+
+.designs h1 {
+  font-size: 2rem;
+  color: #FACC15;
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease;
+}
+
 .designs img {
   max-width: 300px;
   display: block;
   margin: 0 auto;
   border-radius: 5px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.designs img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.6);
 }
 
 .footer {
@@ -141,6 +190,10 @@ body {
   text-align: center;
   padding: 1rem;
   font-size: 1.1rem;
+  transition: background 0.3s ease;
+}
+.footer:hover {
+  background: #e0b814;
 }
 
 @media (max-width: 768px) {
