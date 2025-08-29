@@ -101,10 +101,6 @@ body {
   object-fit: contain;
   transition: transform 0.3s ease, filter 0.3s ease;
 }
-.tools img:hover {
-  transform: scale(1.2);
-  filter: drop-shadow(0px 0px 8px #fff2f2);
-}
 
 .projects {
   padding: 4rem 8%;
