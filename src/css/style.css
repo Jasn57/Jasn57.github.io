@@ -1,3 +1,4 @@
+/* === Reset === */
 * {
   margin: 0;
   padding: 0;
@@ -16,29 +17,42 @@ body {
   justify-content: center;
   padding: 1rem;
   background-color: #2e3245;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
+
 .nav ul {
   list-style: none;
   display: flex;
   gap: 2rem;
 }
+
 .nav a {
   color: #fff;
   text-decoration: none;
   font-size: 1.1rem;
   transition: color 0.3s ease, transform 0.3s ease;
 }
+
 .nav a:hover {
   color: #FACC15;
   transform: scale(1.1);
 }
 
+/* === Hero Section === */
 .hero {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
   padding: 4rem 8%;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
 }
 
 .hero-text {
@@ -61,7 +75,7 @@ body {
   text-transform: uppercase;
 }
 
-.hero img {
+.profile-pic {
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -69,10 +83,17 @@ body {
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
+.profile-pic:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 20px rgba(250, 204, 21, 0.3);
+}
+
 .about {
   background-color: #212431;
   padding: 4rem 8%;
   border-radius: 10px;
+  margin: 3rem auto;
+  max-width: 1000px;
 }
 
 .about h1 {
@@ -99,37 +120,66 @@ body {
   flex-wrap: wrap;
 }
 
-
 .tools img {
   width: 60px;
   height: 60px;
   object-fit: contain;
   transition: transform 0.3s ease, filter 0.3s ease;
 }
+
 .tools img:hover {
   transform: scale(1.1);
   filter: brightness(1.2);
 }
 
-.designs {
+.projects {
   padding: 4rem 8%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.designs h1 {
+
+.projects h1 {
   font-size: 2rem;
   color: #FACC15;
   margin-bottom: 2rem;
 }
-.designs img {
-  max-width: 300px;
-  display: block;
-  margin: 0 auto;
-  border-radius: 5px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+
+.card {
+  background-color: #212431;
+  color: #ddd;
+  border-radius: 10px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 700px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.designs img:hover {
+
+.card h2 {
+  font-size: 1.5rem;
+  color: #FACC15;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  margin-bottom: 1.5rem;
+}
+
+.card .btn {
+  display: inline-block;
+  background-color: #FACC15;
+  color: #222;
+  text-decoration: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.card .btn:hover {
+  background-color: #e0b814;
   transform: scale(1.05);
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.6);
 }
 
 .footer {
@@ -140,26 +190,36 @@ body {
   font-size: 1.1rem;
   transition: background 0.3s ease;
 }
+
 .footer:hover {
   background: #e0b814;
 }
 
+.footer a {
+  color: #222;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* === Responsive === */
 @media (max-width: 768px) {
-  .hero {
+  .hero-content {
     flex-direction: column;
     text-align: center;
   }
-  .hero img {
-    margin-top: 1rem;
-  }
-  .about {
+
+  .about, .projects {
     text-align: center;
   }
+
   .tools {
     justify-content: center;
   }
-  .projects .card {
-    flex-direction: column;
+
+  .card {
     text-align: center;
   }
 }
