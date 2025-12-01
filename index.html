@@ -1,85 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jason Vance | Portfolio</title>
-  <link rel="stylesheet" href="src/css/style.css" />
-  <meta name="description" content="Portfolio of Jason Vance, a 15-year-old software developer from Maryland learning cybersecurity." />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jason Vance - Portfolio</title>
+    <link rel="stylesheet" href="src/css/style.css">
 </head>
-
 <body>
-  <header class="nav">
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <section class="hero">
+        <div class="circle-red"></div>
+        <div class="circle-yellow"></div>
+        <h1 class="hero-text">Jason Vance</h1>
+        <p class="hero-subtitle">Ux/Ui Designer</p>
+        <a href="mailto:jasn74939@gmail.com" class="contact-btn">Contact Me</a>
+    </section>
 
-  <section class="hero">
-    <div class="hero-content">
-      <div class="hero-text">
-        <h1>Jason Vance</h1>
-        <h2>Software Developer</h2>
-      </div>
-      <img src="assets/pfp.jpeg" alt="pfp" class="profile-pic" />
-    </div>
-  </section>
+    <section class="about">
+        <h2>About Me:</h2>
+        <p>Hi! Im Jason Vance, a 15 year old Ux/Ui designer based in Maryland. I want to design a website for YOU. If you are interested you can contact my via email: jasn74939@gmail.com</p>
+        <div class="profile-img">
+            <img src="https://avatars.githubusercontent.com/u/201249990?v=4" alt="Jason Vance">
+        </div>
+    </section>
 
-  <section id="about" class="about">
-    <h1>About Me</h1>
-    <p>
-      Hi, I’m Jason a 15 year old software developer from Maryland currently learning cybersecurity. I am currently working on a Python CLI game.
-    </p>
+    <section class="portfolio">
+        <h2>Portfolio:</h2>
+        <div class="portfolio-grid">
+            <a href="#" class="portfolio-item">
+                <img src="assets/PlusPortals-Login.png" alt="Portfolio Item 1">
+            </a>
+            <a href="#" class="portfolio-item">
+                <img src="https://placehold.co/400x533/333333/FFFFFF?text=Project+2" alt="Portfolio Item 2">
+            </a>
+            <a href="#" class="portfolio-item">
+                <img src="https://placehold.co/400x533/333333/FFFFFF?text=Project+3" alt="Portfolio Item 3">
+            </a>
+            <a href="#" class="portfolio-item">
+                <img src="https://placehold.co/400x533/333333/FFFFFF?text=Project+4" alt="Portfolio Item 4">
+            </a>
+        </div>
+    </section>
 
-    <h2>Tech Stack</h2>
-    <div class="tools">
-      <img src="assets/javascript.png" alt="JavaScript logo" title="JavaScript" />
-      <img src="assets/html.png" alt="HTML logo" title="HTML" />
-      <img src="assets/css.svg" alt="CSS logo" title="CSS" />
-      <img src="assets/python.png" alt="Python logo" title="Python" />
-      <img src="assets/figma.png" alt="Figma logo" title="Figma" />
-      <img src="assets/linux.png" alt="Linux logo" title="Linux" />
-      <img src="assets/github.png" alt="GitHub logo" title="GitHub" />
-      <img src="assets/java.png" alt="Java logo" title="Java" />
-    </div>
-  </section>
+    <section class="pricing">
+        <h2>Pricing:</h2>
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <h3>Small Fixes</h3>
+                <div class="price">$40</div>
+            </div>
+            <div class="pricing-card">
+                <h3>1 Page Redesign</h3>
+                <div class="price">$80</div>
+            </div>
+            <div class="pricing-card">
+                <h3>Full Site</h3>
+                <div class="price">$150</div>
+            </div>
+        </div>
+    </section>
 
-  <section id="projects" class="projects">
-    <h1>Projects</h1>
-    <div class="card">
-      <h2>PyVault</h2>
-      <p>
-        PyVault is an encrypted text storage CLI app written in Python.
-        It utilizes JSON and the cryptography library to securely store data.
-      </p>
-      <a href="https://github.com/Jasn57/PyVault" target="_blank" rel="noopener noreferrer" class="btn">View on GitHub</a>
-    </div>
-    <div class="card">
-      <h2>Lock In</h2>
-      <p>
-        Lock In is a VS Code extension designed to boost focus by locking the editor during active work sessions.
-      </p>
-      <a href="https://github.com/Jasn57/lock-in" target="_blank" rel="noopener noreferrer" class="btn">View on GitHub</a>
-    </div>
-  </section>
-    <div class="card">
-      <h2>Gold Rush</h2>
-      <p>
-        A idle clicker browser game made with HTML, CSS, and JavaScript.
-      </p>
-      <a href="https://github.com/Jasn57/gold-rush" target="_blank" rel="noopener noreferrer" class="btn">View on GitHub</a>
-    </div>
-  </section>
-
-  <footer id="contact" class="footer">
-    <p>
-      Contact Me: <a href="mailto:jasn74939@gmail.com"><strong>jasn74939@gmail.com</strong></a>
-    </p>
-    <p>&copy; 2025 Jason Vance. All rights reserved.</p>
-  </footer>
+    <footer>
+        <p>Contact Me: <a href="mailto:jasn74939@gmail.com">jasn74939@gmail.com</a></p>
+        <p>© 2025 Jason Vance All rights reserved.</p>
+    </footer>
 </body>
 </html>
