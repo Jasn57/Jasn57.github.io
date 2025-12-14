@@ -156,35 +156,38 @@ body {
     object-fit: cover;
 }
 
+/* IMPROVED PORTFOLIO SECTION */
 .portfolio {
-    max-width: 900px;
-    margin: 60px auto;
+    max-width: 1100px;
+    margin: 80px auto;
     padding: 0 40px;
     animation: fadeInUp 0.8s ease 0.4s backwards;
 }
 
 .portfolio h2 {
-    font-size: 24px;
-    margin-bottom: 40px;
+    font-size: 32px;
+    margin-bottom: 50px;
     font-weight: bold;
+    text-align: center;
 }
 
 .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+    align-items: start;
 }
 
 .portfolio-item {
     background-color: white;
     border-radius: 16px;
     overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
     width: 100%;
-    height: 320px;
+    aspect-ratio: 4/3;
     display: block;
     text-decoration: none;
-    transition: all 0.4s ease;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     animation: fadeInUp 0.8s ease backwards;
 }
@@ -201,10 +204,6 @@ body {
     animation-delay: 0.7s;
 }
 
-.portfolio-item:nth-child(4) {
-    animation-delay: 0.8s;
-}
-
 .portfolio-item::before {
     content: '';
     position: absolute;
@@ -212,15 +211,15 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.3) 100%);
+    background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.4) 100%);
     opacity: 0;
     transition: opacity 0.4s ease;
     z-index: 1;
 }
 
 .portfolio-item:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
 }
 
 .portfolio-item:hover::before {
@@ -232,56 +231,93 @@ body {
     height: 100%;
     object-fit: cover;
     display: block;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.08);
 }
 
 .pricing {
-    max-width: 900px;
-    margin: 80px auto;
+    max-width: 1100px;
+    margin: 100px auto;
     padding: 0 40px;
     animation: fadeInUp 0.8s ease 0.9s backwards;
 }
 
 .pricing h2 {
-    font-size: 24px;
-    margin-bottom: 40px;
+    font-size: 32px;
+    margin-bottom: 50px;
     font-weight: bold;
+    text-align: center;
 }
 
 .pricing-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+    align-items: start;
 }
 
 .pricing-card {
-    background-color: white;
-    border-radius: 16px;
-    padding: 40px 30px;
+    background: linear-gradient(135deg, #ffffff 0%, #f9f9f9 100%);
+    border-radius: 20px;
+    padding: 50px 35px;
     text-align: center;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-    transition: all 0.3s ease;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     animation: fadeIn 0.6s ease;
+    position: relative;
+    border: 2px solid transparent;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+.pricing-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.pricing-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.pricing-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.pricing-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 6px;
+    background: linear-gradient(90deg, #FF5757, #FFD93D);
+    border-radius: 20px 20px 0 0;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 15px 50px rgba(0,0,0,0.18);
+    border-color: #FF5757;
 }
 
 .pricing-card h3 {
-    font-size: 18px;
-    margin-bottom: 20px;
-    font-weight: normal;
+    font-size: 22px;
+    margin-bottom: 25px;
+    font-weight: 600;
+    color: #1a1a1a;
+    letter-spacing: -0.5px;
+    min-height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .pricing-card .price {
-    font-size: 32px;
+    font-size: 42px;
     font-weight: bold;
-    color: #333;
+    color: #FF5757;
+    margin-top: 10px;
+    letter-spacing: -1px;
 }
 
 footer {
@@ -289,7 +325,7 @@ footer {
     color: white;
     text-align: center;
     padding: 30px;
-    margin-top: 80px;
+    margin-top: 100px;
     font-family: Arial, sans-serif;
     font-size: 14px;
     animation: fadeIn 1s ease 1.2s backwards;
@@ -298,10 +334,34 @@ footer {
 footer a {
     color: white;
     text-decoration: none;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+    transition: border-color 0.3s ease;
+}
+
+footer a:hover {
+    border-bottom-color: white;
 }
 
 footer p {
     margin: 5px 0;
+}
+
+@media (max-width: 1024px) {
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .portfolio-item:nth-child(3) {
+        grid-column: 1 / -1;
+        max-width: 50%;
+        margin: 0 auto;
+    }
+
+    .pricing-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -370,34 +430,42 @@ footer p {
 
     .portfolio h2,
     .pricing h2 {
-        font-size: 20px;
+        font-size: 24px;
         margin-bottom: 30px;
     }
 
     .portfolio-grid {
         grid-template-columns: 1fr;
-        gap: 20px;
+        gap: 25px;
+    }
+
+    .portfolio-item:nth-child(3) {
+        grid-column: auto;
+        max-width: 100%;
     }
 
     .pricing-grid {
         grid-template-columns: 1fr;
-        gap: 20px;
+        gap: 25px;
     }
 
     .pricing-card {
-        padding: 30px 20px;
+        padding: 40px 30px;
     }
 
     .pricing-card h3 {
-        font-size: 16px;
+        font-size: 20px;
+        margin-bottom: 20px;
+        min-height: auto;
     }
 
     .pricing-card .price {
-        font-size: 28px;
+        font-size: 36px;
     }
 
     footer {
         padding: 25px 20px;
         font-size: 13px;
+        margin-top: 60px;
     }
 }
