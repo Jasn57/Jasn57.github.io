@@ -5,12 +5,10 @@
 }
 
 :root {
-    /* Typography Scale */
     --font-display: 'Georgia', serif;
     --font-body: 'Georgia', serif;
     --font-ui: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     
-    /* Font Sizes */
     --text-xs: 14px;
     --text-sm: 16px;
     --text-base: 18px;
@@ -21,14 +19,12 @@
     --text-4xl: 56px;
     --text-5xl: 72px;
     
-    /* Line Heights */
     --leading-tight: 1.2;
     --leading-snug: 1.4;
     --leading-normal: 1.6;
     --leading-relaxed: 1.75;
     --leading-loose: 2;
     
-    /* Spacing Scale */
     --space-2xs: 4px;
     --space-xs: 8px;
     --space-sm: 16px;
@@ -39,13 +35,11 @@
     --space-3xl: 96px;
     --space-4xl: 128px;
     
-    /* Border Radius */
     --radius-sm: 12px;
     --radius-md: 20px;
     --radius-lg: 24px;
     --radius-full: 50px;
     
-    /* Colors */
     --color-primary: #FF5757;
     --color-accent: #FFD93D;
     --color-text: #2c2c2c;
@@ -188,7 +182,6 @@ body {
     transform: translateY(-1px);
 }
 
-/* About Section */
 .about {
     background: linear-gradient(135deg, var(--color-bg-white) 0%, var(--color-bg-light) 100%);
     margin: 0 auto var(--space-3xl);
@@ -257,7 +250,6 @@ body {
     object-fit: cover;
 }
 
-/* Portfolio Section */
 .portfolio {
     max-width: 1400px;
     margin: var(--space-3xl) auto;
@@ -316,7 +308,6 @@ body {
     transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Pricing Section */
 .pricing {
     max-width: 1100px;
     margin: var(--space-4xl) auto;
@@ -376,7 +367,6 @@ body {
     line-height: var(--leading-tight);
 }
 
-/* Footer */
 footer {
     background: linear-gradient(135deg, var(--color-primary) 0%, #FF7B7B 100%);
     color: white;
@@ -407,7 +397,6 @@ footer p {
     margin: var(--space-xs) 0;
 }
 
-/* Tablet Responsive */
 @media (max-width: 1024px) {
     .portfolio-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -426,10 +415,8 @@ footer p {
     }
 }
 
-/* Mobile Responsive */
 @media (max-width: 768px) {
     :root {
-        /* Adjust font sizes for mobile */
         --text-base: 17px;
         --text-lg: 18px;
         --text-xl: 22px;
@@ -438,7 +425,6 @@ footer p {
         --text-4xl: 42px;
         --text-5xl: 48px;
         
-        /* Adjust spacing for mobile */
         --space-md: 20px;
         --space-lg: 28px;
         --space-xl: 40px;
@@ -451,7 +437,6 @@ footer p {
         background-attachment: fixed;
     }
 
-    /* Hero Section Mobile */
     .hero {
         height: 500px;
         padding: var(--space-xl) var(--space-md) var(--space-md);
@@ -483,7 +468,6 @@ footer p {
         -webkit-tap-highlight-color: transparent;
     }
 
-    /* Mobile circle positioning */
     .circle-red {
         width: 280px;
         height: 280px;
@@ -510,7 +494,6 @@ footer p {
         50% { transform: translateY(-12px); }
     }
 
-    /* About Section Mobile */
     .about {
         margin: 0 var(--space-md) var(--space-2xl);
         padding: var(--space-xl) var(--space-md);
@@ -535,8 +518,6 @@ footer p {
         height: 120px;
         border: 5px solid white;
     }
-
-    /* Portfolio Mobile */
     .portfolio {
         padding: 0 var(--space-md);
         margin: var(--space-2xl) auto;
