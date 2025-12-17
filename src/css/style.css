@@ -664,8 +664,8 @@ footer p {
         height: 100px;
         bottom: 45px;
     }
-}
-
+}  
+ 
 @media (prefers-reduced-motion: reduce) {
     *,
     *::before,
