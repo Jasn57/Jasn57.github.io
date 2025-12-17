@@ -289,17 +289,15 @@ body {
 
 .portfolio-item {
     background-color: white;
-    border-radius: 4px;
-    overflow: visible;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     width: 100%;
     display: block;
     text-decoration: none;
     transition: all 0.3s ease;
     position: relative;
     animation: fadeInUp 0.8s ease backwards;
-    padding: 16px;
-    padding-bottom: 60px;
 }
 
 .portfolio-item:nth-child(1) { animation-delay: 0.5s; }
@@ -307,8 +305,8 @@ body {
 .portfolio-item:nth-child(3) { animation-delay: 0.7s; }
 
 .portfolio-item:hover {
-    transform: translateY(-8px) rotate(2deg);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+    transform: translateY(-8px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
 }
 
 .portfolio-item img {
@@ -557,12 +555,12 @@ footer p {
     }
 
     .portfolio-item {
-        border-radius: 4px;
+        border-radius: var(--radius-md);
     }
 
     .portfolio-item:hover {
         transform: none;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     }
 
     .portfolio-item:nth-child(3) {
@@ -572,7 +570,6 @@ footer p {
 
     .portfolio-item:active {
         opacity: 0.9;
-        transform: scale(0.98);
     }
 
     /* Pricing Mobile */
@@ -664,8 +661,9 @@ footer p {
         height: 100px;
         bottom: 45px;
     }
-}  
- 
+}
+
+/* Reduced Motion Preference */
 @media (prefers-reduced-motion: reduce) {
     *,
     *::before,
