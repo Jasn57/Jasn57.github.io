@@ -65,7 +65,6 @@ body {
     overflow-x: hidden;
 }
 
-/* Hero Section */
 .hero {
     position: relative;
     height: 650px;
@@ -84,7 +83,6 @@ body {
     to { opacity: 1; }
 }
 
-/* Circle decorations */
 .circle-red {
     position: absolute;
     width: 520px;
@@ -123,7 +121,6 @@ body {
     50% { transform: translateX(-80px) translateY(-20px); }
 }
 
-/* Hero Typography */
 .hero-text {
     position: relative;
     z-index: 3;
@@ -149,7 +146,6 @@ body {
     line-height: var(--leading-snug);
 }
 
-/* CTA Button */
 .contact-btn {
     position: relative;
     background: linear-gradient(135deg, var(--color-text-dark) 0%, #2d2d2d 100%);
@@ -238,7 +234,6 @@ body {
     margin-bottom: 0;
 }
 
-/* Profile Image */
 .profile-img {
     position: absolute;
     right: 60px;
@@ -295,9 +290,9 @@ body {
     width: 100%;
     display: block;
     text-decoration: none;
-    transition: all 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
-    animation: fadeInUp 0.8s ease backwards;
+    animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) backwards;
 }
 
 .portfolio-item:nth-child(1) { animation-delay: 0.5s; }
@@ -305,8 +300,12 @@ body {
 .portfolio-item:nth-child(3) { animation-delay: 0.7s; }
 
 .portfolio-item:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.05);
 }
 
 .portfolio-item img {
@@ -314,6 +313,7 @@ body {
     aspect-ratio: 1/1;
     object-fit: cover;
     display: block;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Pricing Section */
@@ -370,10 +370,7 @@ body {
 .pricing-card .price {
     font-size: var(--text-4xl);
     font-weight: 800;
-    background: linear-gradient(135deg, var(--color-primary) 0%, #FF7B7B 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--color-text-light);
     margin-top: var(--space-sm);
     letter-spacing: -2px;
     line-height: var(--leading-tight);
@@ -572,7 +569,6 @@ footer p {
         opacity: 0.9;
     }
 
-    /* Pricing Mobile */
     .pricing {
         padding: 0 var(--space-md);
         margin: var(--space-2xl) auto;
@@ -600,7 +596,6 @@ footer p {
         margin-top: var(--space-xs);
     }
 
-    /* Footer Mobile */
     footer {
         padding: var(--space-xl) var(--space-md);
         margin-top: var(--space-2xl);
@@ -616,7 +611,6 @@ footer p {
     }
 }
 
-/* Extra Small Mobile */
 @media (max-width: 375px) {
     :root {
         --text-5xl: 42px;
@@ -663,7 +657,6 @@ footer p {
     }
 }
 
-/* Reduced Motion Preference */
 @media (prefers-reduced-motion: reduce) {
     *,
     *::before,
